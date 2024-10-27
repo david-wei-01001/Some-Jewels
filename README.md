@@ -10,6 +10,11 @@
 - how to SCP via jump host?
   ```bash
   scp -o ProxyJump=<Jump Host> <Local Path to File> <Final Host>:<Path to Folder>
+  ```
+  or copy back:
+  ```bash
+  scp -J <Jump Host> <Final Host>:<Path to File> <Path to Folder>
+
 
 - How to open .ssh/config?
   1. Press Ctrl + O (or Cmd + O on macOS)
