@@ -19,3 +19,8 @@
 - How to open .ssh/config?
   1. Press Ctrl + O (or Cmd + O on macOS)
   2. go to *.ssh* then *config*
+
+- How to restore Git credentials?
+  ```bash
+  git remote set-url origin https://<your-username>:<new-token>@github.com/<your-username>/<repo>.git
+  ```
