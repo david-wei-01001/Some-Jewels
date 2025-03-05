@@ -24,3 +24,8 @@
   ```bash
   git remote set-url origin https://<your-username>:<new-token>@github.com/<your-username>/<repo>.git
   ```
+
+- How to create a file in Power Shell?
+  ```bash
+  New-Item -Path . -Name "run.py" -ItemType "file"
+  ```
