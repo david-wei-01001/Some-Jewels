@@ -1,3 +1,8 @@
+- Extract Audio from Video:
+```bash
+ffmpeg -i input.mp4 -vn -acodec pcm_s16le -ar 44100 -ac 2 output.wav
+```
+
 - How to use GhostScript to flatten pdf?
 
   1. [Download GS](https://www.ghostscript.com/releases/gsdnld.html)
