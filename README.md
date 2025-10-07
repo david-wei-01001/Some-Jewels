@@ -1,3 +1,9 @@
+- Establish RSA with remote SSH server
+  1. ssh-keygen -t ed25519 -C "<your key name>"
+  2. keep pressing enter until finish
+  3. ssh-copy-id <your_username>@<server_address>
+  4. Done
+
 - Extract Audio from Video:
 ```bash
 ffmpeg -i input.mp4 -vn -acodec pcm_s16le -ar 44100 -ac 2 output.wav
