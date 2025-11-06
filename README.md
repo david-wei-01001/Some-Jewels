@@ -22,6 +22,12 @@ ffmpeg -i input.mp4 -vn -acodec pcm_s16le -ar 44100 -ac 2 output.wav
   ```bash
   scp -o ProxyJump=<Jump Host> <Local Path to File> <Final Host>:<Path to Folder>
   ```
+
+  copy folder to host:
+  ```bash
+  scp -r /path/to/folder <SSH host>:/path/to/storage
+  ```
+  
   or copy back:
   ```bash
   scp -J <Jump Host> <Final Host>:<Path to File> <Path to Folder>
