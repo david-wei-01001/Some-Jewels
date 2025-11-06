@@ -25,7 +25,13 @@ ffmpeg -i input.mp4 -vn -acodec pcm_s16le -ar 44100 -ac 2 output.wav
   or copy back:
   ```bash
   scp -J <Jump Host> <Final Host>:<Path to File> <Path to Folder>
-
+  ```
+  
+  copy back entire folders with exclusions:
+  1. on local machine, go to the folder you want to store the downloaded folder
+  2. ```bash
+     rsync -avz --progress --exclude <folder to exclude> <SSH host>:/path/tofolder ./path/to/storage
+     ```
 
 - How to open .ssh/config?
   1. Press Ctrl + O (or Cmd + O on macOS)
