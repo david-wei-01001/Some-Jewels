@@ -52,3 +52,8 @@ ffmpeg -i input.mp4 -vn -acodec pcm_s16le -ar 44100 -ac 2 output.wav
   ```bash
   New-Item -Path . -Name "run.py" -ItemType "file"
   ```
+
+- print
+```bash
+ssh -fN dcsprint
+```
