@@ -57,3 +57,8 @@ ffmpeg -i input.mp4 -vn -acodec pcm_s16le -ar 44100 -ac 2 output.wav
 ```bash
 ssh -fN dcsprint
 ```
+
+- check my slurm account fair share
+  ```bash
+  sshare -A
+  ```
