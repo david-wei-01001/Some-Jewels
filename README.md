@@ -62,3 +62,11 @@ ssh -fN dcsprint
   ```bash
   sshare -A
   ```
+
+- install pyarrow on compute canada
+  ```bash
+  module load python/3.11 arrow/24 gcc/12.3
+  python -m venv --system-site-packages myenv
+  source myenv/bin/activate
+  pip install -r requirements.txt --dry-run
+```
