@@ -63,6 +63,11 @@ ssh -fN dcsprint
   sshare -A
   ```
 
+- unzip using python
+```bash
+python -m zipfile -e <file>.zip <destination, can be .>
+```
+
 - install pyarrow on compute canada
   ```bash
   module load python/3.11 arrow/24 gcc/12.3
@@ -70,3 +75,4 @@ ssh -fN dcsprint
   source myenv/bin/activate
   pip install -r requirements.txt --dry-run
 ```
+
